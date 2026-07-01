@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  p12m4l9Firebase
-//
-//  Created by Максим Минаков on 01.07.2026.
-//
-
 import SwiftUI
 
 struct ContentView: View {
