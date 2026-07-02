@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		855E825D2FF6EED3002F6314 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E825C2FF6EED3002F6314 /* AppViewModel.swift */; };
 		85D8F53D2FF6A2A4009094E9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 85D8F53C2FF6A2A4009094E9 /* FirebaseAuth */; };
 		85D8F53F2FF6A2AB009094E9 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 85D8F53E2FF6A2AB009094E9 /* FirebaseCore */; };
 		85D8F5412FF6A2BA009094E9 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 85D8F5402FF6A2BA009094E9 /* FirebaseDatabase */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		855E825C2FF6EED3002F6314 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		856A8B272FF50A2700F0FD87 /* p12m4l9Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = p12m4l9Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -45,6 +47,7 @@
 		856A8B1E2FF50A2700F0FD87 = {
 			isa = PBXGroup;
 			children = (
+				855E825C2FF6EED3002F6314 /* AppViewModel.swift */,
 				856A8B292FF50A2700F0FD87 /* p12m4l9Firebase */,
 				85D8F53B2FF6A2A4009094E9 /* Frameworks */,
 				856A8B282FF50A2700F0FD87 /* Products */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855E825D2FF6EED3002F6314 /* AppViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,7 +19,7 @@ class MainViewModel: ObservableObject {
     @Published var selectedPage: Page = .register
     
     init() {
-       if let user = Auth.auth().currentUser {
+       if let _ = Auth.auth().currentUser {
            selectedPage = .app
        } else {
            selectedPage = .register
@@ -42,10 +42,11 @@ struct p12m4l9FirebaseApp: App {
                     .environmentObject(viewModel)
             case .login:
                 LoginView()
+                    .environmentObject(viewModel)
             case .app:
                 AppView()
+                    .environmentObject(viewModel)
             }
-            
         }
     }
 }

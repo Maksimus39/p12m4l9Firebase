@@ -14,6 +14,13 @@ struct ContentView: View {
             } label: {
                 Text("Registration")
             }
+            
+            Button {
+                mainVM.selectedPage = .login
+            } label: {
+                Text("Login")
+            }
+
 
         }
         .onChange(of: viewModel.isRegist) { _ , newValue in

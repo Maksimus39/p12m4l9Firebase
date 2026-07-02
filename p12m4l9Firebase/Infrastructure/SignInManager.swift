@@ -11,8 +11,13 @@ class SignInManager {
                 return
                 }
             
-            guard (result?.user) != nil else { return }
-            completion(.success(true))
+            guard let user = result?.user else { return }
+            
+            if user.isEmailVerified {
+                completion(.success(true))
+            } else {
+                completion(.failure(NSError(domain: "Not verified", code: 0, userInfo: [NSLocalizedDescriptionKey: "Please verify your email"])))
+            }
         }
     }
 }
