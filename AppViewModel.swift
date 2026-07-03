@@ -14,10 +14,8 @@ class AppViewModel: ObservableObject {
     
     
     init() {
-        if let verify = Auth.auth().currentUser?.isEmailVerified {
-            self.isVerify = isVerify
-        } else {
-            isVerify = false
-        }
+        isVerify = Auth.auth().currentUser?.isEmailVerified ?? false
+        print(Auth.auth().currentUser?.uid)
+        // "FIMR7x5SXWMhZ9hjEsheAk33iUF2"
     }
 }
